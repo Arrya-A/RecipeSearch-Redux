@@ -53,26 +53,26 @@ const Home = () => {
 
 
                 <>
-                  
-                    {
-                      allRecipes.length > 0 ?
-                        visibleRecipeCards?.map(recipe => (
-                          <div key={recipe?.id} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-3">
-                            <Card className='text-center'>
-                              <Card.Img variant="top" style={{ height: '200px', width: '100%' }} src={recipe?.image} />
-                              <Card.Body>
-                                <Card.Text className='fw-bold mb-2'>{recipe?.name}</Card.Text>
-                                <Link to={`/${recipe?.id}/view`}><Button variant="warning">View Recipe</Button></Link>
-                              </Card.Body>
-                            </Card>
-                          </div>
-                        ))
-                        :
-                        <div className="font-bold text-center mx-5 text-danger">
-                          Recipe You Are Searching Is Not Found
+
+                  {
+                    allRecipes.length > 0 ?
+                      visibleRecipeCards?.map(recipe => (
+                        <div key={recipe?.id} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-3">
+                          <Card className='text-center'>
+                            <Card.Img variant="top" style={{ height: '200px', width: '100%' }} src={recipe?.image} />
+                            <Card.Body>
+                              <Card.Text className='fw-bold mb-2'>{recipe?.name}</Card.Text>
+                              <Link to={`/${recipe?.id}/view`}><Button variant="warning">View Recipe</Button></Link>
+                            </Card.Body>
+                          </Card>
                         </div>
-                    }
-                  
+                      ))
+                      :
+                      <div className="font-bold text-center mx-5 text-danger">
+                        Recipe You Are Searching Is Not Found
+                      </div>
+                  }
+
 
                   {/* pagination */}
                   <div className="d-flex justify-content-center align-items-center mt-5 mb-5">

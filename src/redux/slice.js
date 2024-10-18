@@ -18,7 +18,8 @@ const recipeSlice = createSlice({
     },
     reducers: {
         searchRecipe: (state, actionFromHeader) => {
-            state.allRecipes = state.dummyAllRecipes.filter(item => item.name.toLowerCase().includes(actionFromHeader.payload))
+            const searchTerm = actionFromHeader.payload.toLowerCase();
+            state.allRecipes = state.dummyAllRecipes.filter(item => item.name.toLowerCase().includes(searchTerm) || item.cuisine.toLowerCase().includes(searchTerm) )
         }
 
     },

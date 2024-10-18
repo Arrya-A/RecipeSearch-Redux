@@ -24,7 +24,7 @@ const View = () => {
           <div className="col-md-6 p-5">
             <h2>{recipe?.name}</h2>
             <p className="mb-1"><strong>Rating:</strong> {recipe?.rating} ⭐ <br /><span className='ps-5 ms-2'>{recipe?.reviewCount}</span> reviews</p>
-            <p><span className='fw-bold'>Cuisine : </span>Italian</p>
+            <p><span className='fw-bold'>Cuisine : </span>{recipe?.cuisine}</p>
             <div className='d-flex justify-content-between'>
               <p>SERVINGS: {recipe?.servings}MIN</p>
               <p>PREPPING TIME: {recipe?.prepTimeMinutes} MIN</p>
