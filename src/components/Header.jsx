@@ -10,7 +10,7 @@ const Header = ({insideHome}) => {
     <div className='d-flex justify-content-around w-100 bg-warning fixed p-3'>
       <Link className='text-white font-bold' style={{ textDecoration: 'none' }} to={'/'}>
       
-        <h2 className="title"><i className="fa-solid fa-bowl-rice me-2"></i>Recipe Book</h2>
+        <h2 className="title"><i className="fa-solid fa-bowl-rice me-2"></i>Cook Book</h2>
       </Link>
 
       {insideHome &&
