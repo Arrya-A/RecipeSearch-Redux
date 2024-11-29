@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <div className='row w-100 p-5 bg-warning'>
         <div className="col-md-4">
-          <h4 className=' mb-4'>Recipe Book</h4>
+          <h4 className=' mb-4'><Link to='/' style={{textDecoration:'none', color:'black'}}><i class="fa-solid fa-bowl-rice me-2"></i>Recipe Book</Link></h4>
           <p style={{ textAlign: 'justify' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur neque culpa nostrum eveniet quibusdam reiciendis cum, mollitia nulla praesentium, hic repudiandae, nisi aliquam fuga aperiam maxime expedita? Molestias, repellat quisquam?</p>
         </div>
         <div className="col-md-2 d-md-flex justify-content-center">

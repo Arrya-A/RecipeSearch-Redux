@@ -39,7 +39,7 @@ const Home = () => {
       <Header insideHome={true} />
 
       <section className='products pb-5' style={{ width: "100%" }}>
-        <h2 className='text-center p-5'> THE EASIEST WAY TO MAKE YOUR FAVOURITE MEAL</h2>
+        <h2 className='text text-center p-5'> The easiest way to make your favourite meal...</h2>
         <div className='container'>
 
           <div className="row">
@@ -59,7 +59,7 @@ const Home = () => {
                       visibleRecipeCards?.map(recipe => (
                         <div key={recipe?.id} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-3">
                           <Card className='text-center'>
-                            <Card.Img variant="top" style={{ height: '200px', width: '100%' }} src={recipe?.image} />
+                            <Card.Img variant="top" style={{ height: '275px', width: '100%' }} src={recipe?.image} />
                             <Card.Body>
                               <Card.Text className='fw-bold mb-2'>{recipe?.name}</Card.Text>
                               <Link to={`/${recipe?.id}/view`}><Button variant="warning">View Recipe</Button></Link>
